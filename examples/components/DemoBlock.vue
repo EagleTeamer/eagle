@@ -3,11 +3,11 @@
     <div class="demo">
       <slot></slot>
     </div>
-    <p class="hover">
+    <p class="hover" v-if="$slots.hover">
       <slot name="hover"></slot>
       <i class="iconfont icon-daima" @click="showCode = !showCode"></i>
     </p>
-    <div v-if="showCode" class="code">
+    <div v-if="showCode && $slots.code" class="code">
       <pre v-highlightjs>
         <code class="xml">
           <slot name="code"></slot>
@@ -18,8 +18,6 @@
 </template>
 
 <script>
-  import hljs from 'highlight.js';
-
   export default {
     name: 'DemoBlock',
     data () {

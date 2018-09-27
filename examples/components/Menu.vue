@@ -1,8 +1,10 @@
 <template>
   <ul class="menu">
     <li class="menu-item"><router-link to="/docs/getting-started">快速上手</router-link></li>
-    <!-- <li class="menu-item"><router-link to="">定制主题</router-link></li> -->
-    <!-- <li class="menu-item"><router-link to="">更新日志</router-link></li> -->
+    <li class="menu-item"><router-link to="/docs/theme">定制主题</router-link></li>
+    <li class="menu-item"><router-link to="/docs/log">更新日志</router-link></li>
+    <li class="menu-item"><router-link to="/docs/style">常用样式</router-link></li>
+    <li class="menu-item"><router-link to="/docs/animate">内置过渡动画</router-link></li>
     <li class="menu-item">
       <span class="menu-title">
         <span>Components 组件</span>
@@ -13,6 +15,8 @@
         <ul class="submenu">
           <li class="menu-item"><router-link to="/docs/button">Button <span>按钮</span></router-link></li>
           <li class="menu-item"><router-link to="/docs/icon">Icon <span>图标</span></router-link></li>
+          <li class="menu-item"><router-link to="/docs/scroller">Scroller <span>滚动条</span></router-link></li>
+          <li class="menu-item"><router-link to="/docs/loading">Loading <span>加载中</span></router-link></li>
         </ul>
         <span class="menu-group">Layout</span>
         <ul class="submenu">

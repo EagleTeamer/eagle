@@ -16,13 +16,20 @@
       <button>按钮</button>
       <span slot="hover">可以通过设置type,circle,round来控制按钮的样式</span>
       <span slot="code">
-        &lt;template&gt;
-          &lt;button&gt;按钮&lt;/button&gt;
-        &lt;/template&gt;
+        &lt;template>
+          &lt;button>按钮&lt;/button>
+          &lt;button>按钮&lt;/button>
+        &lt;/template>
 
-        &lt;script&gt;
-          console.log(1111);
-        &lt;/script&gt;
+        &lt;script>
+          export default {
+            data () {
+              return {
+                show: false
+              }
+            }
+          }
+        &lt;/script>
       </span>
     </demo-block>
   </div>

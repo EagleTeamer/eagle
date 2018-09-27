@@ -1,3 +1,6 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 body {
   font-size: 14px;
   color: #34495e;
@@ -26,13 +29,13 @@ a {
 .code {
   .hljs {
     display: block;
+    line-height: 22px;
   }
   .hljs-tag {
     color: #999;
-    line-height: 24px;
     font-size: 14px;
   }
-  .hljs-name {
+  .hljs-name, .hljs-literal {
     color: #f81d22;
   }
   .hljs-string, .hljs-title, .hljs-constant, .hljs-parent, .hljs-tag .hljs-value, .hljs-rules .hljs-value, .hljs-preprocessor, .hljs-pragma, .haml .hljs-symbol, .ruby .hljs-symbol, .ruby .hljs-symbol .hljs-string, .hljs-template_tag, .django .hljs-variable, .smalltalk .hljs-class, .hljs-addition, .hljs-flow, .hljs-stream, .bash .hljs-variable, .apache .hljs-tag, .apache .hljs-cbracket, .tex .hljs-command, .tex .hljs-special, .erlang_repl .hljs-function_or_atom, .asciidoc .hljs-header, .markdown .hljs-header, .coffeescript .hljs-attribute {
@@ -63,7 +66,7 @@ a {
     background: #fff;
     margin: 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
     color: #314659;
     overflow: hidden;
     white-space: normal;
@@ -72,10 +75,21 @@ a {
     white-space: pre;
     display: block;
     overflow: auto;
-    margin-left: -20px;
+    margin-left: 30px;
+    padding: 20px 0;
   }
 }
 .docs {
+  .code {
+    pre {
+      border-top: none;
+    }
+    code {
+      background-color: #fafafa;
+      border: 1px solid #eaeefb;
+      border-radius: 4px;
+    }
+  }
   h1 {
     color: #0d1a26;
     font-weight: 500;
@@ -158,6 +172,9 @@ a {
   .waiting {
     color: #ccc;
     cursor: not-allowed;
+  }
+  a {
+    color: #1890ff;
   }
   a.edit-button {
     display: inline-block;

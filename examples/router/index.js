@@ -12,7 +12,9 @@ export default new Router({
       redirect: '/docs/getting-started',
       children: [
         { path: 'getting-started', component: () => import('../views/getting-started.vue') },
-        { path: 'button', component: () => import('../views/button.vue') }
+        { path: 'button', component: () => import('../views/button.vue') },
+        { path: 'scroller', component: () => import('../views/scroller.vue') },
+        { path: 'popper', component: () => import('../views/popper.vue') },
       ]
     },
     { path: '*', redirect: '/docs' }
