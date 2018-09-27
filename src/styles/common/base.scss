@@ -1,0 +1,88 @@
+@mixin textColor ($color) {
+  color: $color;
+}
+
+@mixin bgColor ($color) {
+  background-color: $color;
+}
+// 文本颜色
+.text- {
+  &primary {
+    @include textColor($primary-color);
+  }
+  &success {
+    @include textColor($success-color);
+  }
+  &info {
+    @include textColor($info-color);
+  }
+  &warn {
+    @include textColor($warn-color);
+  }
+  &error {
+    @include textColor($error-color);
+  }
+}
+// 背景颜色
+.bg- {
+  &primary {
+    @include bgColor($primary-bgcolor);
+  }
+  &success {
+    @include bgColor($success-bgcolor);
+  }
+  &info {
+    @include bgColor($info-bgcolor);
+  }
+  &warn {
+    @include bgColor($warn-bgcolor);
+  }
+  &error {
+    @include bgColor($error-bgcolor);
+  }
+}
+.container {
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+.container-flux {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+}
+// 清除浮动
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+// 文本居中
+.text-center {
+  text-align: center;
+}
+// 块垂直水平居中
+.block-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// flex垂直水平居中
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// flex space-between换行
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

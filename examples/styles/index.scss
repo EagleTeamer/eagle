@@ -38,6 +38,9 @@ a {
   .hljs-name, .hljs-literal {
     color: #f81d22;
   }
+  .hljs-comment {
+    color: #999999;
+  }
   .hljs-string, .hljs-title, .hljs-constant, .hljs-parent, .hljs-tag .hljs-value, .hljs-rules .hljs-value, .hljs-preprocessor, .hljs-pragma, .haml .hljs-symbol, .ruby .hljs-symbol, .ruby .hljs-symbol .hljs-string, .hljs-template_tag, .django .hljs-variable, .smalltalk .hljs-class, .hljs-addition, .hljs-flow, .hljs-stream, .bash .hljs-variable, .apache .hljs-tag, .apache .hljs-cbracket, .tex .hljs-command, .tex .hljs-special, .erlang_repl .hljs-function_or_atom, .asciidoc .hljs-header, .markdown .hljs-header, .coffeescript .hljs-attribute {
     color: #008dff;
   }
@@ -154,14 +157,16 @@ a {
     font-weight: 500;
   }
   blockquote {
-    font-size: 90%;
-    color: #697b8c;
+    font-size: 100%;
+    color: #dd9510;
     border-left: 4px solid #ebedf0;
-    padding-left: 0.8em;
-    margin: 1em 0;
+    padding-left: 18px;
+    margin: 10px 0;
+    background-color: #fafafa;
   }
   blockquote p {
     margin: 0;
+    padding: 8px 0;
   }
   .header-anchor {
     opacity: 0;

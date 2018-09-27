@@ -42,7 +42,7 @@
       <div class="code">
         <pre v-highlightjs>
           <code class="json">
-            <span>{<br />    "plugins": [["import", {<br />        "libraryName": "vue-eagle",<br />        "libraryDirectory": "src/packages"<br />    }]]<br />}</span>
+            <span>{<br />  "plugins": [["import", {<br />      "libraryName": "vue-eagle",<br />      "libraryDirectory": "src/packages"<br />    }]]<br />}</span>
           </code>
         </pre>
       </div>
@@ -50,7 +50,7 @@
       <div class="code">
         <pre v-highlightjs>
           <code class="javascript">
-            <span>import Vue from 'vue'<br />import { Button, Scroller, Table } from 'vue-eagle'<br />import 'vue-eagle/lib/css/style.css'<br />import App from './App.vue'<br /><br />Vue.component(Button.name, Button) <br />Vue.component(Scroller.name, Scroller) <br />Vue.component(Table.name, Table)<br /><br />new Vue({<br />    el: '#app',<br />    render: h = &gt;h(App)<br />})</span>
+            <span>import Vue from 'vue'<br />import { Button, Scroller, Table } from 'vue-eagle'<br />import 'vue-eagle/lib/css/style.css'<br />import App from './App.vue'<br /><br />Vue.component(Button.name, Button) <br />Vue.component(Scroller.name, Scroller) <br />Vue.component(Table.name, Table)<br /><br />new Vue({<br />  el: '#app',<br />  render: h = &gt;h(App)<br />})</span>
           </code>
         </pre>
       </div>
@@ -84,11 +84,7 @@
 </template>
 
 <script>
-export default {
-  name: 'getting-started'
-};
+  export default {
+    name: 'getting-started'
+  };
 </script>
-
-<style>
-
-</style>
